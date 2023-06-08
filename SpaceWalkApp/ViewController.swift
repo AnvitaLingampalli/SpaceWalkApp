@@ -32,7 +32,21 @@ class ViewController: UIViewController {
             as? SecondViewController {
             let dataRecieved =
             sourceViewController.data
-            print (dataRecieved)
+            //print (dataRecieved)
+        }
+        
+        
+    }
+    
+    @IBAction func fromThird (segue:UIStoryboardSegue){
+        var fromSecond = "returned from view 3"
+        print ("returned from view 3")
+        
+        if let sourceViewController = segue.source
+            as? ThirdViewController {
+            let dataRecieved =
+            sourceViewController.datajupiter
+            //print (dataRecieved)
         }
         
         
